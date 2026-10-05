@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class DepositItem(models.Model):
+class DepositItemModel(models.Model):
     deposit_name = models.CharField(max_length=30)
     bank_name = models.CharField(max_length=30)
     savings = models.IntegerField(default=0)
