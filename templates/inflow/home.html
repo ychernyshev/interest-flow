@@ -1,13 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Interest Flow</title>
-    <style>{% static 'inflow/css/bootstrap/bootstrap.min.css' %}</style>
-</head>
-<body>
-    <h2>Home</h2>
+{% load static %}
 
-    <script src="{% static 'inflow/js/bootstrap/bootstrap.bundle.min.js %}"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interest Flow</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'css/bootstrap/bootstrap.min.css' %}"
+    />
+    <style>
+      {% comment %} GENERAL STYLES {% endcomment %}
+      .border-top-1, .border-bottom-1 {
+        border-top: 1px solid #dee2e6 !important;
+        border-bottom: 1px solid #dee2e6 !important;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f8f9fa">
+    {% include 'inflow/inc/topnav.html' %}
+
+    <script src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
+  </body>
 </html>
