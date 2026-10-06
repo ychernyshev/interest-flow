@@ -1,25 +1,6 @@
-{% load static %}
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Interest Flow</title>
-    <link
-      rel="stylesheet"
-      href="{% static 'css/bootstrap/bootstrap.min.css' %}"
-    />
-    <style>
-      {% comment %} GENERAL STYLES {% endcomment %}
-      .border-top-1, .border-bottom-1 {
-        border-top: 1px solid #dee2e6 !important;
-        border-bottom: 1px solid #dee2e6 !important;
-      }
-    </style>
-  </head>
-  <body style="background-color: #f8f9fa">
-    {% include 'inflow/inc/topnav.html' %}
-
-    <script src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
-  </body>
-</html>
+{% extends 'inflow/main_layout.html' %} {% block content %}
+<div class="container-fluid mt-4 p-3">
+  <h1>Welcome to Interest Flow</h1>
+  <p>This is the home page for the Interest Flow application.</p>
+</div>
+{% endblock %}
