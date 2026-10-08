@@ -1,0 +1,99 @@
+<a
+  class="btn btn-primary"
+  data-bs-toggle="offcanvas"
+  href="#offcanvasExample"
+  role="button"
+  aria-controls="offcanvasExample"
+>
+  Add Deposit
+</a>
+<div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row">
+      <div class="col-12">
+        <hr />
+        <div class="mb-3">
+          <label for="depositName" cLink with hreflass="form-label"
+            >Deposit Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="depositName"
+            aria-describedby="depositHelp"
+          />
+          <div id="depositHelp" class="form-text">
+            Enter the name of the deposit.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="depositComment" class="form-label">Deposit Comment</label>
+        <input
+          type="text"
+          class="form-control"
+          id="depositComment"
+          aria-describedby="commentHelp"
+        />
+        <div id="commentHelp" class="form-text">
+          Enter a reason for this deposit creation.
+        </div>
+        <hr />
+      </div>
+      <div class="col-6 m-0">
+        <label for="interestRate" class="form-label">Interest rate</label>
+        <input
+          type="text"
+          class="form-control m-0 w-100"
+          id="interestRate"
+          aria-describedby="interestHelp"
+        />
+        <div id="interestHelp" class="form-text">
+          Enter the interest rate in % for the deposit.
+        </div>
+      </div>
+      <div class="col-6 m-0">
+        <label for="depositTax" class="form-label">TAX</label>
+        <input
+          type="text"
+          class="form-control m-0 w-100"
+          id="depositTax"
+          aria-describedby="taxHelp"
+        />
+        <div id="taxHelp" class="form-text">
+          Enter the tax in % for the deposit.
+        </div>
+      </div>
+      <hr />
+      <div class="col-12">
+        <label for="depositAmount" class="form-label">Deposit Amount</label>
+        <input
+          type="text"
+          class="form-control"
+          id="depositAmount"
+          aria-describedby="amountHelp"
+        />
+        <div id="amountHelp" class="form-text">
+          Enter the amount of the deposit.
+        </div>
+      </div>
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-success w-100" type="submit">Add Deposit</button>
+    </div>
+  </div>
+</div>
