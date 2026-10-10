@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth import logout
 
-from inflow.forms import UserCreationForm
+from .forms import BaseUserCreationForm
 
 
 # Create your views here.
@@ -13,7 +13,7 @@ def login(request):
     return render(request, 'inflow/login.html')
 
 def register(request):
-    form = UserCreationForm()
+    form = BaseUserCreationForm()
     return render(request, 'inflow/register.html')
 
 def logout(request):
